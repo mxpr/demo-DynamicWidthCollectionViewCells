@@ -9,7 +9,7 @@
 import UIKit
 
 class MyCollectionViewCell : UICollectionViewCell {
-    
+  
     @IBOutlet weak var textLabel: UILabel!
     
     override func awakeFromNib() {
@@ -23,10 +23,12 @@ class MyCollectionViewCell : UICollectionViewCell {
         
         textLabel.text = nil
     }
-    
+  
 }
 
 class ViewController : UIViewController {
+  
+    let cellHeight = CGFloat(68)
     
     struct Item {
         let name : String
@@ -43,11 +45,20 @@ class ViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+        // Use default flow layout, no need to subclass
+        collectionView.collectionViewLayout = UICollectionViewFlowLayout()
         
         collectionView.dataSource = self
+        collectionView.delegate = self
         
         updateItems()
         collectionView.reloadData()
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        collectionView.collectionViewLayout.invalidateLayout()
     }
     
     // MARK: Private
@@ -62,19 +73,26 @@ class ViewController : UIViewController {
 }
 
 extension ViewController : UICollectionViewDataSource {
-    
+  
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        
+      
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! MyCollectionViewCell
         
         cell.textLabel.text = items[indexPath.item].name
         
         return cell
     }
-    
+  
+}
+
+extension ViewController  : UICollectionViewDelegateFlowLayout {
+  
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        return CGSizeMake(collectionView.frame.width, cellHeight)
+    }
 }
 
