@@ -15,6 +15,7 @@
 		130036C01C67561800EC0794 /* FullWidthCellsFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130036BF1C67561800EC0794 /* FullWidthCellsFlowLayout.swift */; };
 		134CAB021C83075800CA6CA4 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134CAB001C83075800CA6CA4 /* CollectionViewCell.swift */; };
 		134CAB031C83075800CA6CA4 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 134CAB011C83075800CA6CA4 /* CollectionViewCell.xib */; };
+		70FC932D1C83767200A8BD34 /* OptionSixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FC932C1C83767200A8BD34 /* OptionSixViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		130036BF1C67561800EC0794 /* FullWidthCellsFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullWidthCellsFlowLayout.swift; sourceTree = "<group>"; };
 		134CAB001C83075800CA6CA4 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		134CAB011C83075800CA6CA4 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		70FC932C1C83767200A8BD34 /* OptionSixViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionSixViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +62,9 @@
 		130036AC1C67538B00EC0794 /* DynamicWidthCollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				70FC932E1C8378B400A8BD34 /* Option 5 */,
+				70FC932F1C8378C000A8BD34 /* Option 6 */,
 				130036AD1C67538B00EC0794 /* AppDelegate.swift */,
-				130036AF1C67538B00EC0794 /* OptionFiveViewController.swift */,
-				130036BF1C67561800EC0794 /* FullWidthCellsFlowLayout.swift */,
 				134CAB001C83075800CA6CA4 /* CollectionViewCell.swift */,
 				134CAB011C83075800CA6CA4 /* CollectionViewCell.xib */,
 				130036B11C67538B00EC0794 /* Main.storyboard */,
@@ -71,6 +73,23 @@
 				130036B91C67538B00EC0794 /* Info.plist */,
 			);
 			path = DynamicWidthCollectionViewCells;
+			sourceTree = "<group>";
+		};
+		70FC932E1C8378B400A8BD34 /* Option 5 */ = {
+			isa = PBXGroup;
+			children = (
+				130036AF1C67538B00EC0794 /* OptionFiveViewController.swift */,
+				130036BF1C67561800EC0794 /* FullWidthCellsFlowLayout.swift */,
+			);
+			name = "Option 5";
+			sourceTree = "<group>";
+		};
+		70FC932F1C8378C000A8BD34 /* Option 6 */ = {
+			isa = PBXGroup;
+			children = (
+				70FC932C1C83767200A8BD34 /* OptionSixViewController.swift */,
+			);
+			name = "Option 6";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70FC932D1C83767200A8BD34 /* OptionSixViewController.swift in Sources */,
 				134CAB021C83075800CA6CA4 /* CollectionViewCell.swift in Sources */,
 				130036B01C67538B00EC0794 /* OptionFiveViewController.swift in Sources */,
 				130036C01C67561800EC0794 /* FullWidthCellsFlowLayout.swift in Sources */,
