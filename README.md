@@ -11,6 +11,11 @@ Based on the write up in [this blog post](http://www.matrixprojects.net/p/uicoll
 - A subclass of `UICollectionViewFlowLayout` is used
 - The subclass modifies `itemSize`'s `width` property on bounds change
 
+### Option 6: Use "viewWillLayoutSubviews"
+
+- Invalidates layout in "viewWillLayoutSubviews"
+- Calculates new size in "collectionView:collectionViewLayout:sizeForItemAtIndex"
+
 # Contributions
 
 Contributions are welcome! 
