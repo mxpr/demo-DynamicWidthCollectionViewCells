@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController : UIViewController {
+class OptionFiveViewController : UIViewController {
     
     struct Item {
         let name : String
@@ -44,7 +44,7 @@ class ViewController : UIViewController {
     
 }
 
-extension ViewController : UICollectionViewDataSource {
+extension OptionFiveViewController : UICollectionViewDataSource {
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count

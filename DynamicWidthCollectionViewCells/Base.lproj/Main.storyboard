@@ -53,7 +53,7 @@
         <!--Option 5-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DynamicWidthCollectionViewCells" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="OptionFiveViewController" customModule="DynamicWidthCollectionViewCells" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -83,8 +83,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Option 5" id="LU3-FV-5xk"/>
                     <connections>
-                        <outlet property="collectionView" destination="IJc-5G-pBS" id="vPG-6q-pLy"/>
-                        <outlet property="flowLayout" destination="SbU-8v-ZMb" id="jlw-Vo-rER"/>
+                        <outlet property="collectionView" destination="IJc-5G-pBS" id="WO1-wK-GBL"/>
+                        <outlet property="flowLayout" destination="SbU-8v-ZMb" id="fHo-kd-LXe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
