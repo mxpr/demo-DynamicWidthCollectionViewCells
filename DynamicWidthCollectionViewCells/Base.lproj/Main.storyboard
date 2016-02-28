@@ -50,7 +50,7 @@
             </objects>
             <point key="canvasLocation" x="515" y="377"/>
         </scene>
-        <!--View Controller-->
+        <!--Option 5-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DynamicWidthCollectionViewCells" customModuleProvider="target" sceneMemberID="viewController">
@@ -62,42 +62,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IJc-5G-pBS">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IJc-5G-pBS">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SbU-8v-ZMb" customClass="FullWidthCellsFlowLayout" customModule="DynamicWidthCollectionViewCells" customModuleProvider="target">
                                     <size key="itemSize" width="336" height="68"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="JNx-oX-G3a" customClass="MyCollectionViewCell" customModule="DynamicWidthCollectionViewCells" customModuleProvider="target">
-                                        <rect key="frame" x="132" y="64" width="336" height="68"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="336" height="68"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVe-If-aBa">
-                                                    <rect key="frame" x="8" y="23" width="320" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstItem="HVe-If-aBa" firstAttribute="leading" secondItem="JNx-oX-G3a" secondAttribute="leading" constant="8" id="BFs-IE-sUe"/>
-                                            <constraint firstAttribute="trailing" secondItem="HVe-If-aBa" secondAttribute="trailing" constant="8" id="XGw-Ir-4dj"/>
-                                            <constraint firstItem="HVe-If-aBa" firstAttribute="centerY" secondItem="JNx-oX-G3a" secondAttribute="centerY" id="ird-l0-1q3"/>
-                                        </constraints>
-                                        <connections>
-                                            <outlet property="textLabel" destination="HVe-If-aBa" id="ZBG-ks-IRe"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -108,6 +81,7 @@
                             <constraint firstItem="IJc-5G-pBS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qh2-nR-Yt0"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Option 5" id="LU3-FV-5xk"/>
                     <connections>
                         <outlet property="collectionView" destination="IJc-5G-pBS" id="vPG-6q-pLy"/>
                         <outlet property="flowLayout" destination="SbU-8v-ZMb" id="jlw-Vo-rER"/>
