@@ -8,25 +8,7 @@
 
 import UIKit
 
-class MyCollectionViewCell : UICollectionViewCell {
-    
-    @IBOutlet weak var textLabel: UILabel!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        layer.borderColor = UIColor.grayColor().CGColor
-        layer.borderWidth = 2.0
-    }
-    
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        
-        textLabel.text = nil
-    }
-    
-}
-
-class ViewController : UIViewController {
+class OptionFiveViewController : UIViewController {
     
     struct Item {
         let name : String
@@ -44,6 +26,7 @@ class ViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        collectionView.registerNib(CollectionViewCell.nib, forCellWithReuseIdentifier: "cell")
         collectionView.dataSource = self
         
         updateItems()
@@ -61,7 +44,7 @@ class ViewController : UIViewController {
     
 }
 
-extension ViewController : UICollectionViewDataSource {
+extension OptionFiveViewController : UICollectionViewDataSource {
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count
@@ -69,7 +52,7 @@ extension ViewController : UICollectionViewDataSource {
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! MyCollectionViewCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! CollectionViewCell
         
         cell.textLabel.text = items[indexPath.item].name
         
