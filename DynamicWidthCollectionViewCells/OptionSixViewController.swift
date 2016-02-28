@@ -55,6 +55,9 @@ extension OptionSixViewController: UICollectionViewDataSource {
 
 extension OptionSixViewController: UICollectionViewDelegateFlowLayout {
   func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-    return CGSizeMake(collectionView.frame.width, CGFloat(68))
+    let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout, insets = flowLayout.sectionInset
+    let itemWidth = collectionView.frame.width - insets.left - insets.right, itemHeight = CGFloat(68)
+    
+    return CGSizeMake(itemWidth, itemHeight)
   }
 }
